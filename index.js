@@ -54,4 +54,12 @@ const bookList = document.getElementById("book-list");
 //Creating a loop 
 bookStore.books.forEach(book) =>{
 
+//Adding the elements
+    const bookContainer = document.createElement("li");
+    const bookTitle = document.createElement("h3");
+    const bookAuthor = document.createElement("p");
+    const bookImage = document.createElement("img");
+
     
+
+

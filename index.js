@@ -44,6 +44,7 @@ const bookStore = {
 }
 
 // Write your code here!
+
 //Update on the title 
 const bookStoreTitle = document.getElementById("header");
 bookStoreTitle.textContent = bookStore.name;
@@ -52,7 +53,7 @@ bookStoreTitle.textContent = bookStore.name;
 const bookList = document.getElementById("book-list");
 
 //Creating a loop 
-bookStore.books.forEach(book) =>{
+bookStore.books.forEach(book) => {
 
 //Adding the elements
     const bookContainer = document.createElement("li");
@@ -60,6 +61,11 @@ bookStore.books.forEach(book) =>{
     const bookAuthor = document.createElement("p");
     const bookImage = document.createElement("img");
 
-    
 
+//Adding content 
+bookTitle.textContent = book.title;
+    bookAuthor.textContent = book.author;
+    bookImage.src = book.imageUrl;
+
+    
 

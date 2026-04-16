@@ -67,5 +67,12 @@ bookTitle.textContent = book.title;
     bookAuthor.textContent = book.author;
     bookImage.src = book.imageUrl;
 
+//Appending the elements into the container
+    bookContainer.appendChild(bookTitle);
+    bookContainer.appendChild(bookAuthor);
+    bookContainer.appendChild(bookImage);
+
     
+
+
 

@@ -48,3 +48,10 @@ const bookStore = {
 const bookStoreTitle = document.getElementById("header");
 bookStoreTitle.textContent = bookStore.name;
 
+// Select book list container
+const bookList = document.getElementById("book-list");
+
+//Creating a loop 
+bookStore.books.forEach(book) =>{
+
+    

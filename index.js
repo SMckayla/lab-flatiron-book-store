@@ -53,7 +53,7 @@ bookStoreTitle.textContent = bookStore.name;
 const bookList = document.getElementById("book-list");
 
 //Creating a loop 
-bookStore.books.forEach(book) => {
+bookStore.books.forEach((book) => {
 
 //Adding the elements
     const bookContainer = document.createElement("li");
@@ -72,7 +72,12 @@ bookTitle.textContent = book.title;
     bookContainer.appendChild(bookAuthor);
     bookContainer.appendChild(bookImage);
 
-    
+//Appending container into list
+   bookList.appendChild(bookContainer);
+
+});
+
+
 
 
 
